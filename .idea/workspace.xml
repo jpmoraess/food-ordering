@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Implementing Order Service domain logic using DDD - Order Aggregate Root">
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/com/food/ordering/system/domain/exception/DomainException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/exception/OrderDomainException.java" afterDir="false" />
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Adding Order Entity implementation methods">
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Restaurant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-domain/src/main/java/com/food/ordering/system/domain/valueobject/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/com/food/ordering/system/domain/valueobject/Money.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/OrderItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669207160103</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adding Order Entity implementation methods">
+      <created>1669209120160</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669209120160</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +116,7 @@
     <MESSAGE value="Creating common domain module with Base Entity and Aggregate Root classes" />
     <MESSAGE value="Adding value objects and domain events to common domain module" />
     <MESSAGE value="Implementing Order Service domain logic using DDD - Order Aggregate Root" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing Order Service domain logic using DDD - Order Aggregate Root" />
+    <MESSAGE value="Adding Order Entity implementation methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Order Entity implementation methods" />
   </component>
 </project>
