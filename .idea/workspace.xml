@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Testing Order Service domain logic - part 1">
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Testing Order Service domain logic - part 2">
+      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/common.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/init-kafka.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/kafka-cluster.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/zookeeper.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/test/java/com/food/ordering/system/order/service/domain/OrderApplicationServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/test/java/com/food/ordering/system/order/service/domain/OrderApplicationServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,16 +42,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "temurin-17",
-    "last_opened_file_path": "C:/Users/joaop/OneDrive/Área de Trabalho/food-ordering-system"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/joaop/OneDrive/Área de Trabalho/food-ordering-system&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\joaop\OneDrive\Área de Trabalho\food-ordering-system\infrastructure\docker-compose\volumes\zookeeper" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.food.ordering.system.domain.valueobject" />
     </key>
@@ -244,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669390005058</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Testing Order Service domain logic - part 2">
+      <created>1669392002457</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669392002457</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,7 +290,8 @@
     <MESSAGE value="Implementing input ports in Order Application Service" />
     <MESSAGE value="Implementing Order Track Command Handler" />
     <MESSAGE value="Testing Order Service domain logic - part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing Order Service domain logic - part 1" />
+    <MESSAGE value="Testing Order Service domain logic - part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing Order Service domain logic - part 2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/food_ordering_system$com_food_ordering_system_order_service_domain_in_order_application_service.ic" NAME="com.food.ordering.system.order.service.domain in order-application-service Coverage Results" MODIFIED="1669391924467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
