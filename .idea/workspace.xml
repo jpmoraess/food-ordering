@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Testing Order Service domain logic - part 2">
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Running Apache Kafka using Docker">
       <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/common.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/init-kafka.yml" afterDir="false" />
@@ -261,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669392002457</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Running Apache Kafka using Docker">
+      <created>1669406425094</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669406425094</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -291,7 +298,8 @@
     <MESSAGE value="Implementing Order Track Command Handler" />
     <MESSAGE value="Testing Order Service domain logic - part 1" />
     <MESSAGE value="Testing Order Service domain logic - part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing Order Service domain logic - part 2" />
+    <MESSAGE value="Running Apache Kafka using Docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Running Apache Kafka using Docker" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/food_ordering_system$com_food_ordering_system_order_service_domain_in_order_application_service.ic" NAME="com.food.ordering.system.order.service.domain in order-application-service Coverage Results" MODIFIED="1669391924467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
