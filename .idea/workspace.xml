@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Data access module: Adding Order JPA Entity">
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/order/adapter/OrderRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/order/mapper/OrderDataAccessMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/order/repository/OrderJpaRepository.java" afterDir="false" />
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Data access module: Adding JPA Repository &amp; Adapter implementation">
+      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/customer/adapter/CustomerRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/customer/entity/CustomerEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/customer/mapper/CustomerDataAccessMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/customer/repository/CustomerJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/restaurant/adapter/RestaurantRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/restaurant/entity/RestaurantEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/restaurant/entity/RestaurantEntityId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/restaurant/exception/RestaurantDataAccessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/restaurant/mapper/RestaurantDataAccessMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/restaurant/repository/RestaurantJpaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Customer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,18 +45,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "temurin-17",
-    "last_opened_file_path": "C:/Users/joaop/OneDrive/Área de Trabalho/food-ordering-system/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/restaurant",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/joaop/OneDrive/Área de Trabalho/food-ordering-system/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/restaurant&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.food.ordering.system.order.service.dataaccess.order.entity" />
@@ -65,7 +73,14 @@
       <recent name="com.food.ordering.system.domain.valueobject" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.com.food.ordering.system.order.service.domain in order-application-service">
+  <component name="RunManager" selected="Application.Teste">
+    <configuration name="Teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Teste" />
+      <module name="order-domain-core" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderApplicationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="order-application-service" />
       <extension name="coverage">
@@ -92,22 +107,6 @@
       <option name="PACKAGE_NAME" value="com.food.ordering.system.order.service.domain" />
       <option name="MAIN_CLASS_NAME" value="com.food.ordering.system.order.service.domain.OrderApplicationServiceTest" />
       <option name="METHOD_NAME" value="testCreateOrderWithPassiveRestaurant" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderApplicationServiceTest.testCreateOrderWithWrongPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="order-application-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.food.ordering.system.order.service.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.food.ordering.system.order.service.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.food.ordering.system.order.service.domain.OrderApplicationServiceTest" />
-      <option name="METHOD_NAME" value="testCreateOrderWithWrongPrice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Teste" />
         <item itemvalue="JUnit.com.food.ordering.system.order.service.domain in order-application-service" />
         <item itemvalue="JUnit.OrderApplicationServiceTest" />
         <item itemvalue="JUnit.OrderApplicationServiceTest.testCreateOrderWithPassiveRestaurant" />
         <item itemvalue="JUnit.OrderApplicationServiceTest.testCreateOrderWithWrongProductPrice" />
-        <item itemvalue="JUnit.OrderApplicationServiceTest.testCreateOrderWithWrongPrice" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669682499665</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Data access module: Adding JPA Repository &amp; Adapter implementation">
+      <created>1669683946278</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1669683946278</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -368,7 +374,8 @@
     <MESSAGE value="Application module: Adding Web Controller" />
     <MESSAGE value="Application module: Adding Controller Advice" />
     <MESSAGE value="Data access module: Adding Order JPA Entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data access module: Adding Order JPA Entity" />
+    <MESSAGE value="Data access module: Adding JPA Repository &amp; Adapter implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Data access module: Adding JPA Repository &amp; Adapter implementation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/food_ordering_system$com_food_ordering_system_order_service_domain_in_order_application_service.ic" NAME="com.food.ordering.system.order.service.domain in order-application-service Coverage Results" MODIFIED="1669391924467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
