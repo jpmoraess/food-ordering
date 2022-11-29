@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Data access module: Adding JPA Repository &amp; Adapter implementation">
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/customer/adapter/CustomerRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/customer/entity/CustomerEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/customer/mapper/CustomerDataAccessMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/customer/repository/CustomerJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/restaurant/adapter/RestaurantRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/restaurant/entity/RestaurantEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/restaurant/entity/RestaurantEntityId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/restaurant/exception/RestaurantDataAccessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/restaurant/mapper/RestaurantDataAccessMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/restaurant/repository/RestaurantJpaRepository.java" afterDir="false" />
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Data access module: Adding Customer and Restaurant implementations">
+      <change afterPath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/mapper/OrderMessagingDataMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-messaging/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-messaging/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669683946278</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Data access module: Adding Customer and Restaurant implementations">
+      <created>1669740908715</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1669740908715</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -375,7 +374,8 @@
     <MESSAGE value="Application module: Adding Controller Advice" />
     <MESSAGE value="Data access module: Adding Order JPA Entity" />
     <MESSAGE value="Data access module: Adding JPA Repository &amp; Adapter implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data access module: Adding JPA Repository &amp; Adapter implementation" />
+    <MESSAGE value="Data access module: Adding Customer and Restaurant implementations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Data access module: Adding Customer and Restaurant implementations" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/food_ordering_system$com_food_ordering_system_order_service_domain_in_order_application_service.ic" NAME="com.food.ordering.system.order.service.domain in order-application-service Coverage Results" MODIFIED="1669391924467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
