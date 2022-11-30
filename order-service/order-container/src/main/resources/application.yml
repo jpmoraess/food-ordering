@@ -58,7 +58,13 @@ kafka-consumer-config:
   batch-listener: true
   auto-startup: true
   concurrency-level: 3
-  session-timeout-ms:
+  session-timeout-ms: 10000
+  heartbeat-interval-ms: 3000
+  max-poll-interval-ms: 300000
+  max-poll-records: 500
+  max-partition-fetch-bytes-default: 1048576
+  max-partition-fetch-bytes-boost-factor: 1
+  poll-timeout-ms: 150
 
 
 
