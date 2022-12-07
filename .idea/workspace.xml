@@ -4,28 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Creating Customer Service &amp; Running Order Service">
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/java/com/food/ordering/system/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-dataaccess/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-dataaccess/src/main/java/com/food/ordering/system/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-application-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-application-service/src/main/java/com/food/ordering/system/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/com/food/ordering/system/payment/service/domain/entity/CreditEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/com/food/ordering/system/payment/service/domain/entity/CreditHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/com/food/ordering/system/payment/service/domain/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/com/food/ordering/system/payment/service/domain/valueobject/CreditEntryId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/com/food/ordering/system/payment/service/domain/valueobject/CreditHistoryId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/com/food/ordering/system/payment/service/domain/valueobject/PaymentId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/com/food/ordering/system/payment/service/domain/valueobject/TransactionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-messaging/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Domain core module: Adding Aggregate Root, Entity and Value Objects">
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/com/food/ordering/system/payment/service/domain/event/PaymentEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/com/food/ordering/system/payment/service/domain/exception/PaymentDomainException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/com/food/ordering/system/payment/service/domain/exception/PaymentNotFoundException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +19,8 @@
       <list>
         <option value="package-info" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -396,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669825291112</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Domain core module: Adding Aggregate Root, Entity and Value Objects">
+      <created>1670413643392</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1670413643392</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -411,7 +400,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implementing Domain Events in Order Service domain layer" />
     <MESSAGE value="Implementing Order Domain Service" />
     <MESSAGE value="Implementing Order Application Service - DTO classes" />
     <MESSAGE value="Adding Mapper class and port definitions to Order Application Service" />
@@ -436,7 +424,8 @@
     <MESSAGE value="Container module: Explaining kafka consumer properties" />
     <MESSAGE value="Container module: Adding Order database schema file" />
     <MESSAGE value="Creating Customer Service &amp; Running Order Service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating Customer Service &amp; Running Order Service" />
+    <MESSAGE value="Domain core module: Adding Aggregate Root, Entity and Value Objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Domain core module: Adding Aggregate Root, Entity and Value Objects" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/food_ordering_system$OrderApplicationServiceTest.ic" NAME="OrderApplicationServiceTest Coverage Results" MODIFIED="1670163482232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
