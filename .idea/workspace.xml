@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Implementing Messaging module: Adding Mapper and Publishers">
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/listener/kafka/PaymentRequestKafkaListener.java" afterDir="false" />
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Implementing Messaging module: Adding Listeners">
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/java/com/food/ordering/system/payment/service/domain/BeanConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/java/com/food/ordering/system/payment/service/domain/PaymentServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/resources/init-data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/resources/init-schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/payment-container/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/payment-container/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/payment-container/src/main/java/com/food/ordering/system/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +73,7 @@
       <recent name="com.food.ordering.system.domain.valueobject" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrderApplicationServiceTest">
+  <component name="RunManager" selected="Application.PaymentServiceApplication">
     <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.food.ordering.system.customer.service.CustomerServiceApplication" />
       <module name="customer-service" />
@@ -86,6 +93,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.food.ordering.system.order.service.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.food.ordering.system.payment.service.domain.PaymentServiceApplication" />
+      <module name="payment-container" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.food.ordering.system.payment.service.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,27 +135,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.food.ordering.system.order.service.domain in order-application-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="order-application-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.food.ordering.system.order.service.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.food.ordering.system.order.service.domain" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PaymentServiceApplication" />
         <item itemvalue="JUnit.OrderApplicationServiceTest" />
         <item itemvalue="Application.OrderServiceApplication" />
         <item itemvalue="Application.CustomerServiceApplication" />
         <item itemvalue="Application.Teste" />
-        <item itemvalue="JUnit.com.food.ordering.system.order.service.domain in order-application-service" />
       </list>
     </recent_temporary>
   </component>
@@ -449,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670612489060</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Implementing Messaging module: Adding Listeners">
+      <created>1670642261683</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1670642261683</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,7 +477,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implementing Kafka config data generic module" />
     <MESSAGE value="Implementing Kafka model generic module" />
     <MESSAGE value="Implementing Kafka producer generic module" />
     <MESSAGE value="Implementing Kafka consumer generic module" />
@@ -489,7 +501,8 @@
     <MESSAGE value="Application Service domain module: Refactoring fire event process" />
     <MESSAGE value="Implementing Data Access Module" />
     <MESSAGE value="Implementing Messaging module: Adding Mapper and Publishers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing Messaging module: Adding Mapper and Publishers" />
+    <MESSAGE value="Implementing Messaging module: Adding Listeners" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing Messaging module: Adding Listeners" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/food_ordering_system$OrderApplicationServiceTest.ic" NAME="OrderApplicationServiceTest Coverage Results" MODIFIED="1670163482232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
