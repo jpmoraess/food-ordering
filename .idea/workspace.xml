@@ -4,26 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Implementing container module for Payment Service">
-      <change afterPath="$PROJECT_DIR$/restaurant-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/java/com/food/ordering/system/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/src/main/java/com/food/ordering/system/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/entity/OrderApproval.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/entity/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/entity/Restaurant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/valueobject/OrderApprovalId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/src/main/java/com/food/ordering/system/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Domain core module: Adding Aggregate Root and Entities">
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/RestaurantDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/RestaurantDomainServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/event/OrderApprovalEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/event/OrderApprovedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/event/OrderRejectedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/exception/RestaurantDomainException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/exception/RestaurantNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,18 +41,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/joaop/OneDrive/Área de Trabalho/food-ordering-system/payment-service/payment-dataaccess/src/main/java/com/food/ordering/system/payment/service/dataaccess&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "temurin-17",
+    "last_opened_file_path": "C:/Users/joaop/OneDrive/Área de Trabalho/food-ordering-system",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.food.ordering.system.order.service.dataaccess.order.entity" />
@@ -479,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670644172253</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Domain core module: Adding Aggregate Root and Entities">
+      <created>1670647415512</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1670647415512</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,7 +490,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implementing Kafka producer generic module" />
     <MESSAGE value="Implementing Kafka consumer generic module" />
     <MESSAGE value="Application module: Adding Web Controller" />
     <MESSAGE value="Application module: Adding Controller Advice" />
@@ -519,7 +514,8 @@
     <MESSAGE value="Implementing Messaging module: Adding Mapper and Publishers" />
     <MESSAGE value="Implementing Messaging module: Adding Listeners" />
     <MESSAGE value="Implementing container module for Payment Service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing container module for Payment Service" />
+    <MESSAGE value="Domain core module: Adding Aggregate Root and Entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Domain core module: Adding Aggregate Root and Entities" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/food_ordering_system$OrderApplicationServiceTest.ic" NAME="OrderApplicationServiceTest Coverage Results" MODIFIED="1670163482232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
