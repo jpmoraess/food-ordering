@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Implementing Data access module">
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/src/main/java/com/food/ordering/system/restaurant/service/messaging/listener/kafka/RestaurantApprovalRequestKafkaListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/src/main/java/com/food/ordering/system/restaurant/service/messaging/mapper/RestaurantMessagingDataMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/src/main/java/com/food/ordering/system/restaurant/service/messaging/publisher/kafka/OrderApprovedKafkaMessagePublisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/src/main/java/com/food/ordering/system/restaurant/service/messaging/publisher/kafka/OrderRejectedKafkaMessagePublisher.java" afterDir="false" />
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Implementing Messaging module">
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/java/com/food/ordering/system/restaurant/service/domain/BeanConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/java/com/food/ordering/system/restaurant/service/domain/RestaurantServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/init-data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/init-schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/src/main/java/com/food/ordering/system/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-container/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-container/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-container/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/java/com/food/ordering/system/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,13 +157,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669059442848</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Creating Order Service modules using Clean Architecture - PART 2">
-      <created>1669081043697</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1669081043697</updated>
     </task>
     <task id="LOCAL-00003" summary="Creating common domain module with Base Entity and Aggregate Root classes">
       <created>1669164039163</created>
@@ -499,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670942329385</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Implementing Messaging module">
+      <created>1670946277125</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1670946277125</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -514,7 +516,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Data access module: Adding JPA Repository &amp; Adapter implementation" />
     <MESSAGE value="Data access module: Adding Customer and Restaurant implementations" />
     <MESSAGE value="Messaging module: Adding Mapper and Config Data" />
     <MESSAGE value="Messaging module: Adding Publisher implementations" />
@@ -539,7 +540,8 @@
     <MESSAGE value="Application Service domain module: Adding Mapper, DTO and Ports" />
     <MESSAGE value="Application Service domain module: Implementing input ports" />
     <MESSAGE value="Implementing Data access module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing Data access module" />
+    <MESSAGE value="Implementing Messaging module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing Messaging module" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/food_ordering_system$OrderApplicationServiceTest.ic" NAME="OrderApplicationServiceTest Coverage Results" MODIFIED="1670163482232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
