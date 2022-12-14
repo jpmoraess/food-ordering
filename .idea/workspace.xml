@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Implementing Order Payment Saga">
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/OrderApprovalSaga.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/OrderSagaHelper.java" afterDir="false" />
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Using Order Payment Saga in Messaging &amp; Implementing Order Approval Saga">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/saga/src/main/java/com/food/ordering/system/saga/SagaSep.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/saga/src/main/java/com/food/ordering/system/saga/SagaStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/OrderPaymentSaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/OrderPaymentSaga.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/PaymentResponseMessageListenerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/PaymentResponseMessageListenerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/RestaurantApprovalResponseMessageListenerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/RestaurantApprovalResponseMessageListenerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/init-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/init-data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/init-schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/init-schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +79,7 @@
       <recent name="com.food.ordering.system.domain.valueobject" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PaymentServiceApplication">
+  <component name="RunManager" selected="Application.CustomerServiceApplication">
     <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.food.ordering.system.customer.service.CustomerServiceApplication" />
       <module name="customer-service" />
@@ -123,9 +119,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Teste" />
-      <module name="order-domain-core" />
+    <configuration name="RestaurantServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.food.ordering.system.restaurant.service.domain.RestaurantServiceApplication" />
+      <module name="restaurant-container" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.food.ordering.system.restaurant.service.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -147,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PaymentServiceApplication" />
-        <item itemvalue="JUnit.OrderApplicationServiceTest" />
-        <item itemvalue="Application.OrderServiceApplication" />
+        <item itemvalue="Application.RestaurantServiceApplication" />
         <item itemvalue="Application.CustomerServiceApplication" />
-        <item itemvalue="Application.Teste" />
+        <item itemvalue="Application.PaymentServiceApplication" />
+        <item itemvalue="Application.OrderServiceApplication" />
+        <item itemvalue="JUnit.OrderApplicationServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -163,13 +165,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669059442848</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Adding value objects and domain events to common domain module">
-      <created>1669165201402</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1669165201402</updated>
     </task>
     <task id="LOCAL-00005" summary="Implementing Order Service domain logic using DDD - Order Aggregate Root">
       <created>1669207160102</created>
@@ -507,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670986278646</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Using Order Payment Saga in Messaging &amp; Implementing Order Approval Saga">
+      <created>1671026839703</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1671026839704</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -522,7 +524,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Messaging module: Adding Mapper and Config Data" />
     <MESSAGE value="Messaging module: Adding Publisher implementations" />
     <MESSAGE value="Messaging module: Adding Listener implementations" />
     <MESSAGE value="Container module: Adding Spring Boot startes class and config" />
@@ -547,7 +548,8 @@
     <MESSAGE value="Implementing Data access module" />
     <MESSAGE value="Implementing Messaging module" />
     <MESSAGE value="Implementing Order Payment Saga" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing Order Payment Saga" />
+    <MESSAGE value="Using Order Payment Saga in Messaging &amp; Implementing Order Approval Saga" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using Order Payment Saga in Messaging &amp; Implementing Order Approval Saga" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/food_ordering_system$OrderApplicationServiceTest.ic" NAME="OrderApplicationServiceTest Coverage Results" MODIFIED="1670163482232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
