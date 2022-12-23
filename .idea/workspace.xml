@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Refactoring Order domain layer: Adding Outbox models &amp; Updating ports">
-      <change afterPath="$PROJECT_DIR$/infrastructure/outbox/src/main/java/com/food/ordering/system/outbox/OutboxScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/outbox/src/main/java/com/food/ordering/system/outbox/config/SchedulerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/saga/src/main/java/com/food/ordering/system/saga/order/SagaConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/outbox/scheduler/payment/PaymentOutboxHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/outbox/scheduler/payment/PaymentOutboxScheduler.java" afterDir="false" />
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Refactoring Order domain layer: Adding Outbox scheduler">
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/outbox/scheduler/payment/PaymentOutboxCleanerScheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/outbox/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/outbox/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/outbox/scheduler/payment/PaymentOutboxHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/outbox/scheduler/payment/PaymentOutboxHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,13 +164,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669059442848</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Implementing Domain Events in Order Service domain layer">
-      <created>1669212909196</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1669212909196</updated>
     </task>
     <task id="LOCAL-00009" summary="Implementing Order Domain Service">
       <created>1669215758888</created>
@@ -512,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671808063106</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Refactoring Order domain layer: Adding Outbox scheduler">
+      <created>1671813141519</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1671813141519</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -527,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Container module: Explaining kafka consumer properties" />
     <MESSAGE value="Container module: Adding Order database schema file" />
     <MESSAGE value="Creating Customer Service &amp; Running Order Service" />
     <MESSAGE value="Domain core module: Adding Aggregate Root, Entity and Value Objects" />
@@ -552,7 +547,8 @@
     <MESSAGE value="Fix some database script errors and modules in pom.xml" />
     <MESSAGE value="Updating Order Service database schema and config for Outbox Pattern" />
     <MESSAGE value="Refactoring Order domain layer: Adding Outbox models &amp; Updating ports" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Order domain layer: Adding Outbox models &amp; Updating ports" />
+    <MESSAGE value="Refactoring Order domain layer: Adding Outbox scheduler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Order domain layer: Adding Outbox scheduler" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/food_ordering_system$OrderApplicationServiceTest.ic" NAME="OrderApplicationServiceTest Coverage Results" MODIFIED="1670163482232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

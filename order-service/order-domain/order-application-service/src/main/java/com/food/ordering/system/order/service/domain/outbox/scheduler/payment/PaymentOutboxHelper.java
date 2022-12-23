@@ -45,4 +45,9 @@ public class PaymentOutboxHelper {
         }
         log.info("OrderPaymentOutboxMessage saved with outbox id: {}", response.getId().toString());
     }
+
+    @Transactional
+    public void deletePaymentOutboxMessageByOutboxStatusAndSagaStatus(OutboxStatus outboxStatus, SagaStatus... sagaStatus) {
+        paymentOutboxRepository.deleteByTypeAndOutboxStatusAndSagaStatus(ORDER_SAGA_NAME, outboxStatus, sagaStatus);
+    }
 }
