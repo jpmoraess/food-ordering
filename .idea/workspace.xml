@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Using Order Payment Saga in Messaging &amp; Implementing Order Approval Saga">
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Fix some database script errors and modules in pom.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/init-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/init-data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/init-schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/init-schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,18 +42,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/joaop/OneDrive/Área de Trabalho/food-ordering-system/common/common-dataaccess/src/main/java/com/food/ordering/system/dataaccess/restaurant/entity&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "temurin-17",
+    "last_opened_file_path": "C:/Development/food-ordering-system",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.food.ordering.system.order.service.dataaccess.order.entity" />
@@ -165,13 +162,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669059442848</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Implementing Order Service domain logic using DDD - Order Aggregate Root">
-      <created>1669207160102</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1669207160103</updated>
     </task>
     <task id="LOCAL-00006" summary="Adding Order Entity implementation methods">
       <created>1669209120160</created>
@@ -509,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671026839704</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Fix some database script errors and modules in pom.xml">
+      <created>1671033833439</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1671033833439</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -524,7 +521,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Messaging module: Adding Publisher implementations" />
     <MESSAGE value="Messaging module: Adding Listener implementations" />
     <MESSAGE value="Container module: Adding Spring Boot startes class and config" />
     <MESSAGE value="Container module: Explaining kafka consumer properties" />
@@ -549,7 +545,8 @@
     <MESSAGE value="Implementing Messaging module" />
     <MESSAGE value="Implementing Order Payment Saga" />
     <MESSAGE value="Using Order Payment Saga in Messaging &amp; Implementing Order Approval Saga" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using Order Payment Saga in Messaging &amp; Implementing Order Approval Saga" />
+    <MESSAGE value="Fix some database script errors and modules in pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix some database script errors and modules in pom.xml" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/food_ordering_system$OrderApplicationServiceTest.ic" NAME="OrderApplicationServiceTest Coverage Results" MODIFIED="1670163482232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
