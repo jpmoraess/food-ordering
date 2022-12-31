@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Fixing POMs">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Refactoring Order domain layer: Updating Order Approval Saga">
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/test/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/OrderApprovalSaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/OrderApprovalSaga.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/mapper/OrderDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/mapper/OrderDataMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/test/java/com/food/ordering/system/order/service/domain/OrderApplicationServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/test/java/com/food/ordering/system/order/service/domain/OrderApplicationServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/test/java/com/food/ordering/system/order/service/domain/OrderTestConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/test/java/com/food/ordering/system/order/service/domain/OrderTestConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,19 +53,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/moraes/IdeaProjects/food-ordering&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/home/moraes/IdeaProjects/food-ordering",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.food.ordering.system.order.service.dataaccess.order.entity" />
@@ -89,7 +88,7 @@
       <recent name="com.food.ordering.system.domain.valueobject" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CustomerServiceApplication">
+  <component name="RunManager" selected="JUnit.OrderApplicationServiceTest">
     <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.food.ordering.system.customer.service.CustomerServiceApplication" />
       <module name="customer-service" />
@@ -159,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrderApplicationServiceTest" />
         <item itemvalue="Application.RestaurantServiceApplication" />
         <item itemvalue="Application.CustomerServiceApplication" />
         <item itemvalue="Application.PaymentServiceApplication" />
         <item itemvalue="Application.OrderServiceApplication" />
-        <item itemvalue="JUnit.OrderApplicationServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -175,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669059442848</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Running Apache Kafka using Docker">
-      <created>1669406425094</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1669406425094</updated>
     </task>
     <task id="LOCAL-00017" summary="Running Apache Kafka using Docker">
       <created>1669406436822</created>
@@ -519,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672499798877</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Refactoring Order domain layer: Updating Order Approval Saga">
+      <created>1672522808099</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1672522808099</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -534,7 +533,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Application Service domain module: Implementing inpurt ports - part 1" />
     <MESSAGE value="Application Service domain module: Implementing input ports - part 2" />
     <MESSAGE value="Application Service domain module: Refactoring fire event process" />
     <MESSAGE value="Implementing Data Access Module" />
@@ -559,7 +557,8 @@
     <MESSAGE value="Refactoring Order domain layer: Updating Order Payment Saga pt 1" />
     <MESSAGE value="Refactoring Order domain layer: Updating Order Payment Saga pt 2" />
     <MESSAGE value="Fixing POMs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing POMs" />
+    <MESSAGE value="Refactoring Order domain layer: Updating Order Approval Saga" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Order domain layer: Updating Order Approval Saga" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/food_ordering_system$com_food_ordering_system_order_service_domain_in_order_application_service.ic" NAME="com.food.ordering.system.order.service.domain in order-application-service Coverage Results" MODIFIED="1669391924467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
