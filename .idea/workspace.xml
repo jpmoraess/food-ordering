@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Refactoring Order domain layer: Adding Outbox scheduler part 2">
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/outbox/scheduler/payment/PaymentOutboxCleanerScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/outbox/scheduler/approval/ApprovalOutboxHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/outbox/scheduler/approval/RestaurantApprovalOutboxCleanerScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/outbox/scheduler/approval/RestaurantApprovalOutboxScheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/outbox/scheduler/payment/PaymentOutboxHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/outbox/scheduler/payment/PaymentOutboxHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +75,7 @@
       <recent name="C:\Users\joaop\OneDrive\Área de Trabalho\food-ordering-system\order-service\order-dataaccess\src\main\java\com\food\ordering\system\order\service\dataaccess\customer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/infrastructure/saga/src/main/java/com/food/ordering/system/saga" />
       <recent name="C:\Users\joaop\OneDrive\Área de Trabalho\food-ordering-system\infrastructure\docker-compose\volumes\zookeeper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -170,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669059442848</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Implementing Order Application Service - DTO classes">
-      <created>1669220948951</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1669220948951</updated>
     </task>
     <task id="LOCAL-00011" summary="Adding Mapper class and port definitions to Order Application Service">
       <created>1669223209136</created>
@@ -514,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672490336918</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Refactoring Order domain layer: Adding Outbox scheduler part 2">
+      <created>1672490385531</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1672490385531</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
