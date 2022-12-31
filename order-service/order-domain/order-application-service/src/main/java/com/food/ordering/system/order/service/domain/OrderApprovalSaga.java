@@ -14,14 +14,10 @@ import org.springframework.transaction.annotation.Transactional;
 public class OrderApprovalSaga implements SagaStep<RestaurantApprovalResponse, EmptyEvent, OrderCancelledEvent> {
     private final OrderDomainService orderDomainService;
     private final OrderSagaHelper orderSagaHelper;
-    private final OrderCancelledPaymentRequestMessagePublisher orderCancelledPaymentRequestMessagePublisher;
 
-    public OrderApprovalSaga(OrderDomainService orderDomainService,
-                             OrderSagaHelper orderSagaHelper,
-                             OrderCancelledPaymentRequestMessagePublisher orderCancelledPaymentRequestMessagePublisher) {
+    public OrderApprovalSaga(OrderDomainService orderDomainService, OrderSagaHelper orderSagaHelper) {
         this.orderDomainService = orderDomainService;
         this.orderSagaHelper = orderSagaHelper;
-        this.orderCancelledPaymentRequestMessagePublisher = orderCancelledPaymentRequestMessagePublisher;
     }
 
     @Override
@@ -41,7 +37,7 @@ public class OrderApprovalSaga implements SagaStep<RestaurantApprovalResponse, E
         log.info("Cancelling order with id: {}", restaurantApprovalResponse.getOrderId());
         Order order = orderSagaHelper.findOrder(restaurantApprovalResponse.getOrderId());
         OrderCancelledEvent orderCancelledEvent = orderDomainService
-                .cancelOrderPayment(order, restaurantApprovalResponse.getFailureMessages(), orderCancelledPaymentRequestMessagePublisher);
+                .cancelOrderPayment(order, restaurantApprovalResponse.getFailureMessages());
         orderSagaHelper.saveOrder(order);
         log.info("Order with id: {} is cancelling", order.getId().getValue().toString());
         return orderCancelledEvent;
