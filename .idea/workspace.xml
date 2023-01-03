@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Refactoring Order Data Access module for Outbox pattern">
-      <change afterPath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/publisher/kafka/OrderPaymentEventKafkaPublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Refactoring Order Messaging module for Outbox pattern - Part 1">
+      <change afterPath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/publisher/kafka/OrderApprovalEventKafkaPublisher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/src/main/java/com/food/ordering/system/kafka/producer/KafkaMessageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/src/main/java/com/food/ordering/system/kafka/producer/KafkaMessageHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/listener/kafka/PaymentResponseKafkaListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/listener/kafka/PaymentResponseKafkaListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/listener/kafka/RestaurantApprovalResponseKafkaListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/listener/kafka/RestaurantApprovalResponseKafkaListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/mapper/OrderMessagingDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/mapper/OrderMessagingDataMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/publisher/kafka/CancelOrderKafkaMessagePublisher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/publisher/kafka/CreateOrderKafkaMessagePublisher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/publisher/kafka/PayOrderKafkaMessagePublisher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/publisher/kafka/OrderPaymentEventKafkaPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/publisher/kafka/OrderPaymentEventKafkaPublisher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,18 +51,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Development/food-ordering-system",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Development/food-ordering-system&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.food.ordering.system.order.service.dataaccess.order.entity" />
