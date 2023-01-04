@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Refactoring Order Messaging module for Outbox pattern - Part 2">
-      <change afterPath="$PROJECT_DIR$/order-service/order-container/src/test/java/com/food/ordering/system/order/service/domain/OrderPaymentSagaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-container/src/test/resources/sql/OrderPaymentSagaTestCleanUp.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-container/src/test/resources/sql/OrderPaymentSagaTestSetUp.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-container/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-container/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Testing Order Payment Saga" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669059442848</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Implementing Kafka model generic module">
-      <created>1669411492343</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1669411492343</updated>
     </task>
     <task id="LOCAL-00020" summary="Implementing Kafka producer generic module">
       <created>1669423234466</created>
@@ -524,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672766408190</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Testing Order Payment Saga">
+      <created>1672774121681</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1672774121681</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -539,7 +533,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implementing Data Access Module" />
     <MESSAGE value="Implementing Messaging module: Adding Mapper and Publishers" />
     <MESSAGE value="Implementing Messaging module: Adding Listeners" />
     <MESSAGE value="Implementing container module for Payment Service" />
@@ -564,7 +557,8 @@
     <MESSAGE value="Refactoring Order domain layer: Updating Order Approval Saga" />
     <MESSAGE value="Refactoring Order Data Access module for Outbox pattern" />
     <MESSAGE value="Refactoring Order Messaging module for Outbox pattern - Part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Order Messaging module for Outbox pattern - Part 2" />
+    <MESSAGE value="Testing Order Payment Saga" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing Order Payment Saga" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/food_ordering_system$OrderApplicationServiceTest.ic" NAME="OrderApplicationServiceTest Coverage Results" MODIFIED="1670163482232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
