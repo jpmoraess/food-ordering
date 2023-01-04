@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Refactoring Payment Data Access module for Outbox Pattern">
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/publisher/kafka/PaymentEventKafkaPublisher.java" afterDir="false" />
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Refactoring Payment Messaging module for Outbox Pattern">
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/test/java/com/food/ordering/system/payment/service/domain/PaymentRequestMessageListenerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/payment-messaging/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/payment-messaging/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/listener/kafka/PaymentRequestKafkaListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/listener/kafka/PaymentRequestKafkaListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/mapper/PaymentMessagingDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/mapper/PaymentMessagingDataMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/publisher/kafka/PaymentCancelledKafkaMessagePublisher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/publisher/kafka/PaymentCompletedKafkaMessagePublisher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/publisher/kafka/PaymentFailedKafkaMessagePublisher.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,18 +46,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Development/food-ordering-system/order-service/order-container/src/test/resources/sql&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Development/food-ordering-system",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.food.ordering.system.order.service.dataaccess.order.entity" />
@@ -88,35 +82,7 @@
       <recent name="com.food.ordering.system.domain.valueobject" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrderPaymentSagaTest.testDoublePaymentWithLatch">
-    <configuration name="RestaurantServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.food.ordering.system.restaurant.service.domain.RestaurantServiceApplication" />
-      <module name="restaurant-container" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.food.ordering.system.restaurant.service.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderApplicationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="order-application-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.food.ordering.system.order.service.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.food.ordering.system.order.service.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.food.ordering.system.order.service.domain.OrderApplicationServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PaymentRequestMessageListenerTest.testDoublePaymentWithThreads">
     <configuration name="OrderPaymentSagaTest.testDoublePayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="order-container" />
       <extension name="coverage">
@@ -165,13 +131,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PaymentRequestMessageListenerTest.testDoublePayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="payment-container" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.food.ordering.system.payment.service.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.food.ordering.system.payment.service.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.food.ordering.system.payment.service.domain.PaymentRequestMessageListenerTest" />
+      <option name="METHOD_NAME" value="testDoublePayment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentRequestMessageListenerTest.testDoublePaymentWithThreads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="payment-container" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.food.ordering.system.payment.service.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.food.ordering.system.payment.service.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.food.ordering.system.payment.service.domain.PaymentRequestMessageListenerTest" />
+      <option name="METHOD_NAME" value="testDoublePaymentWithThreads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PaymentRequestMessageListenerTest.testDoublePaymentWithThreads" />
+        <item itemvalue="JUnit.PaymentRequestMessageListenerTest.testDoublePayment" />
         <item itemvalue="JUnit.OrderPaymentSagaTest.testDoublePaymentWithLatch" />
         <item itemvalue="JUnit.OrderPaymentSagaTest.testDoublePaymentWithThreads" />
         <item itemvalue="JUnit.OrderPaymentSagaTest.testDoublePayment" />
-        <item itemvalue="JUnit.OrderApplicationServiceTest" />
-        <item itemvalue="Application.RestaurantServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -183,13 +181,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669059442848</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Data access module: Adding JPA Repository &amp; Adapter implementation">
-      <created>1669683946278</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1669683946278</updated>
     </task>
     <task id="LOCAL-00026" summary="Data access module: Adding Customer and Restaurant implementations">
       <created>1669740908715</created>
@@ -527,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672853451045</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Refactoring Payment Messaging module for Outbox Pattern">
+      <created>1672855068036</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1672855068036</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -542,7 +540,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Domain core module: Adding Exception, Domain events and Domain Service" />
     <MESSAGE value="Application Service domain module: Adding Mapper, DTO and Ports" />
     <MESSAGE value="Application Service domain module: Implementing input ports" />
     <MESSAGE value="Implementing Data access module" />
@@ -567,7 +564,8 @@
     <MESSAGE value="Refactoring Payment domain layer: Adding Outbox schedulers" />
     <MESSAGE value="Refactoring Payment domain layer: Updating Message listener implementation" />
     <MESSAGE value="Refactoring Payment Data Access module for Outbox Pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Payment Data Access module for Outbox Pattern" />
+    <MESSAGE value="Refactoring Payment Messaging module for Outbox Pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Payment Messaging module for Outbox Pattern" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/food_ordering_system$OrderApplicationServiceTest.ic" NAME="OrderApplicationServiceTest Coverage Results" MODIFIED="1670163482232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
