@@ -19,6 +19,10 @@
         </dependency>
         <dependency>
             <groupId>com.food.ordering.system</groupId>
+            <artifactId>saga</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.food.ordering.system</groupId>
             <artifactId>payment-domain-core</artifactId>
         </dependency>
         <dependency>
