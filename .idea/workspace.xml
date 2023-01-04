@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Refactoring Payment domain layer: Updating Message listener implementation">
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-dataaccess/src/main/java/com/food/ordering/system/payment/service/dataaccess/outbox/adapter/OrderOutboxRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-dataaccess/src/main/java/com/food/ordering/system/payment/service/dataaccess/outbox/entity/OrderOutboxEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-dataaccess/src/main/java/com/food/ordering/system/payment/service/dataaccess/outbox/exception/OrderOutboxNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-dataaccess/src/main/java/com/food/ordering/system/payment/service/dataaccess/outbox/mapper/OrderOutboxDataAccessMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-dataaccess/src/main/java/com/food/ordering/system/payment/service/dataaccess/outbox/repository/OrderOutboxJpaRepository.java" afterDir="false" />
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Refactoring Payment Data Access module for Outbox Pattern">
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/publisher/kafka/PaymentEventKafkaPublisher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/payment-messaging/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/payment-messaging/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/listener/kafka/PaymentRequestKafkaListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/listener/kafka/PaymentRequestKafkaListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/mapper/PaymentMessagingDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/mapper/PaymentMessagingDataMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/publisher/kafka/PaymentCancelledKafkaMessagePublisher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/publisher/kafka/PaymentCompletedKafkaMessagePublisher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/com/food/ordering/system/payment/service/messaging/publisher/kafka/PaymentFailedKafkaMessagePublisher.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669059442848</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Data access module: Adding Order JPA Entity">
-      <created>1669682499664</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1669682499665</updated>
     </task>
     <task id="LOCAL-00025" summary="Data access module: Adding JPA Repository &amp; Adapter implementation">
       <created>1669683946278</created>
@@ -525,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672851577974</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Refactoring Payment Data Access module for Outbox Pattern">
+      <created>1672853451045</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1672853451045</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -540,7 +542,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Domain core module: Adding Aggregate Root and Entities" />
     <MESSAGE value="Domain core module: Adding Exception, Domain events and Domain Service" />
     <MESSAGE value="Application Service domain module: Adding Mapper, DTO and Ports" />
     <MESSAGE value="Application Service domain module: Implementing input ports" />
@@ -565,7 +566,8 @@
     <MESSAGE value="Updating Payment database schema, config and package structure for Outbox" />
     <MESSAGE value="Refactoring Payment domain layer: Adding Outbox schedulers" />
     <MESSAGE value="Refactoring Payment domain layer: Updating Message listener implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Payment domain layer: Updating Message listener implementation" />
+    <MESSAGE value="Refactoring Payment Data Access module for Outbox Pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Payment Data Access module for Outbox Pattern" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/food_ordering_system$OrderApplicationServiceTest.ic" NAME="OrderApplicationServiceTest Coverage Results" MODIFIED="1670163482232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
