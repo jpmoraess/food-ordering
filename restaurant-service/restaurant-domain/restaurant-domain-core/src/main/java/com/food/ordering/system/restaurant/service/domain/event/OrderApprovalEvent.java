@@ -13,8 +13,7 @@ public abstract class OrderApprovalEvent implements DomainEvent<OrderApproval> {
     private final List<String> failureMessages;
     private final ZonedDateTime createdAt;
 
-    public OrderApprovalEvent(OrderApproval orderApproval, RestaurantId restaurantId,
-                              List<String> failureMessages, ZonedDateTime createdAt) {
+    public OrderApprovalEvent(OrderApproval orderApproval, RestaurantId restaurantId, List<String> failureMessages, ZonedDateTime createdAt) {
         this.orderApproval = orderApproval;
         this.restaurantId = restaurantId;
         this.failureMessages = failureMessages;

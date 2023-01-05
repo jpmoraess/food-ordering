@@ -6,6 +6,7 @@ import com.food.ordering.system.order.service.domain.exception.OrderDomainExcept
 import com.food.ordering.system.outbox.OutboxStatus;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.RecordMetadata;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.support.SendResult;
 import org.springframework.stereotype.Component;
 import org.springframework.util.concurrent.ListenableFutureCallback;
@@ -15,11 +16,13 @@ import java.util.function.BiConsumer;
 @Slf4j
 @Component
 public class KafkaMessageHelper {
-    private final ObjectMapper objectMapper;
 
-    public KafkaMessageHelper(ObjectMapper objectMapper) {
-        this.objectMapper = objectMapper;
-    }
+    @Autowired
+    private  ObjectMapper objectMapper;
+
+//    public KafkaMessageHelper(ObjectMapper objectMapper) {
+//        this.objectMapper = objectMapper;
+//    }
 
     public <T, U> ListenableFutureCallback<SendResult<String, T>> getKafkaCallback(
             String responseTopicName, T avroModel, U outboxMessage,
@@ -48,6 +51,7 @@ public class KafkaMessageHelper {
     }
 
     public <T> T getOrderEventPayload(String payload, Class<T> outputType) {
+       // final var objectMapper = new ObjectMapper();
         try {
             return objectMapper.readValue(payload, outputType);
         } catch (JsonProcessingException e) {
