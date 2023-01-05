@@ -4,9 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Refactoring Payment Messaging module for Outbox Pattern">
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/test/java/com/food/ordering/system/payment/service/domain/PaymentRequestMessageListenerTest.java" afterDir="false" />
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Testing Payment Request Message Listener for double payment">
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/src/main/java/com/food/ordering/system/restaurant/service/dataaccess/restaurant/outbox/adapter/OrderOutboxRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/src/main/java/com/food/ordering/system/restaurant/service/dataaccess/restaurant/outbox/entity/OrderOutboxEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/src/main/java/com/food/ordering/system/restaurant/service/dataaccess/restaurant/outbox/exception/OrderOutboxNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/src/main/java/com/food/ordering/system/restaurant/service/dataaccess/restaurant/outbox/mapper/OrderOutboxDataAccessMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/src/main/java/com/food/ordering/system/restaurant/service/dataaccess/restaurant/outbox/repository/OrderOutboxJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/restaurant/service/domain/outbox/model/OrderEventPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/restaurant/service/domain/outbox/model/OrderOutboxMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/restaurant/service/domain/outbox/scheduler/OrderOutboxCleanerScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/restaurant/service/domain/outbox/scheduler/OrderOutboxHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/restaurant/service/domain/outbox/scheduler/OrderOutboxScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/restaurant/service/domain/ports/output/message/publisher/RestaurantApprovalResponseMessagePublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/restaurant/service/domain/ports/output/repository/OrderOutboxRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/init-schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/init-schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/restaurant/service/domain/RestaurantApprovalRequestHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/restaurant/service/domain/RestaurantApprovalRequestHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/restaurant/service/domain/RestaurantApprovalRequestMessageListenerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/restaurant/service/domain/RestaurantApprovalRequestMessageListenerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/restaurant/service/domain/mapper/RestaurantDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/restaurant/service/domain/mapper/RestaurantDataMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/restaurant/service/domain/ports/output/message/publisher/OrderApprovedMessagePublisher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/restaurant/service/domain/ports/output/message/publisher/OrderRejectedMessagePublisher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/RestaurantDomainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/RestaurantDomainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/RestaurantDomainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/RestaurantDomainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/event/OrderApprovedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/event/OrderApprovedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/event/OrderRejectedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/event/OrderRejectedEvent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +44,8 @@
         <option value="package-info" />
         <option value="Kotlin Class" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -51,7 +76,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Development/food-ordering-system",
+    "last_opened_file_path": "C:/Development/food-ordering-system/restaurant-service/restaurant-domain/restaurant-application-service/src/main/java/com/food/ordering/system/restaurant/service/domain/outbox",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -64,11 +89,11 @@
       <recent name="com.food.ordering.system.order.service.application.exception.handler" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development\food-ordering-system\restaurant-service\restaurant-domain\restaurant-application-service\src\main\java\com\food\ordering\system\restaurant\service\domain\outbox" />
+      <recent name="C:\Development\food-ordering-system\restaurant-service\restaurant-dataaccess\src\main\java\com\food\ordering\system\restaurant\service\dataaccess\restaurant\outbox" />
       <recent name="C:\Development\food-ordering-system\order-service\order-container\src\test\resources\sql" />
       <recent name="C:\Users\joaop\OneDrive\Área de Trabalho\food-ordering-system\common\common-dataaccess\src\main\java\com\food\ordering\system\dataaccess\restaurant\entity" />
       <recent name="C:\Users\joaop\OneDrive\Área de Trabalho\food-ordering-system\payment-service\payment-dataaccess\src\main\java\com\food\ordering\system\payment\service\dataaccess" />
-      <recent name="C:\Users\joaop\OneDrive\Área de Trabalho\food-ordering-system\order-service\order-dataaccess\src\main\java\com\food\ordering\system\order\service\dataaccess\restaurant" />
-      <recent name="C:\Users\joaop\OneDrive\Área de Trabalho\food-ordering-system\order-service\order-dataaccess\src\main\java\com\food\ordering\system\order\service\dataaccess\customer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/infrastructure/saga/src/main/java/com/food/ordering/system/saga" />
@@ -181,13 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669059442848</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Data access module: Adding Customer and Restaurant implementations">
-      <created>1669740908715</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1669740908715</updated>
     </task>
     <task id="LOCAL-00027" summary="Messaging module: Adding Mapper and Config Data">
       <created>1669742069197</created>
@@ -525,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672855068036</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Testing Payment Request Message Listener for double payment">
+      <created>1672861193700</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1672861193700</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -540,7 +565,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Application Service domain module: Adding Mapper, DTO and Ports" />
     <MESSAGE value="Application Service domain module: Implementing input ports" />
     <MESSAGE value="Implementing Data access module" />
     <MESSAGE value="Implementing Messaging module" />
@@ -565,7 +589,8 @@
     <MESSAGE value="Refactoring Payment domain layer: Updating Message listener implementation" />
     <MESSAGE value="Refactoring Payment Data Access module for Outbox Pattern" />
     <MESSAGE value="Refactoring Payment Messaging module for Outbox Pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Payment Messaging module for Outbox Pattern" />
+    <MESSAGE value="Testing Payment Request Message Listener for double payment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing Payment Request Message Listener for double payment" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/food_ordering_system$OrderApplicationServiceTest.ic" NAME="OrderApplicationServiceTest Coverage Results" MODIFIED="1670163482232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
