@@ -4,28 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="fixing some errors">
-      <change afterPath="$PROJECT_DIR$/customer-service/customer-application/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer-service/customer-container/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer-service/customer-container/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer-service/customer-container/src/main/resources/init-data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer-service/customer-container/src/main/resources/init-schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer-service/customer-dataaccess/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-application-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-domain-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer-service/customer-messaging/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/resources/avro/customer.avsc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Creating Customer kafka topic &amp; Customer modules">
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-application/src/main/java/com/food/ordering/system/customer/service/application/handler/CustomerGlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-application/src/main/java/com/food/ordering/system/customer/service/application/rest/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-dataaccess/src/main/java/com/food/ordering/system/customer/service/dataaccess/customer/adapter/CustomerRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-dataaccess/src/main/java/com/food/ordering/system/customer/service/dataaccess/customer/entity/CustomerEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-dataaccess/src/main/java/com/food/ordering/system/customer/service/dataaccess/customer/exception/CustomerDataAccessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-dataaccess/src/main/java/com/food/ordering/system/customer/service/dataaccess/customer/mapper/CustomerDataAccessMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-dataaccess/src/main/java/com/food/ordering/system/customer/service/dataaccess/customer/repository/CustomerJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-application-service/src/main/java/com/food/ordering/system/customer/service/domain/CustomerApplicationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-application-service/src/main/java/com/food/ordering/system/customer/service/domain/CustomerCreateCommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-application-service/src/main/java/com/food/ordering/system/customer/service/domain/config/CustomerServiceConfigData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-application-service/src/main/java/com/food/ordering/system/customer/service/domain/create/CreateCustomerCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-application-service/src/main/java/com/food/ordering/system/customer/service/domain/create/CreateCustomerResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-application-service/src/main/java/com/food/ordering/system/customer/service/domain/mapper/CustomerDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-application-service/src/main/java/com/food/ordering/system/customer/service/domain/ports/input/service/CustomerApplicationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-application-service/src/main/java/com/food/ordering/system/customer/service/domain/ports/output/message/publisher/CustomerMessagePublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-application-service/src/main/java/com/food/ordering/system/customer/service/domain/ports/output/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-domain-core/src/main/java/com/food/ordering/system/customer/service/domain/CustomerDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-domain-core/src/main/java/com/food/ordering/system/customer/service/domain/CustomerDomainServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-domain-core/src/main/java/com/food/ordering/system/customer/service/domain/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-domain-core/src/main/java/com/food/ordering/system/customer/service/domain/event/CustomerCreatedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-domain-core/src/main/java/com/food/ordering/system/customer/service/domain/exception/CustomerDomainException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-messaging/src/main/java/com/food/ordering/system/customer/service/messaging/mapper/CustomerMessagingDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-messaging/src/main/java/com/food/ordering/system/customer/service/messaging/publisher/kafka/CustomerCreatedEventKafkaPublisher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/food/ordering/system/customer/service/CustomerServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/customer-container/src/main/java/com/food/ordering/system/customer/service/CustomerServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/init-data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/init-schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/resources/avro/customer.avsc" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/resources/avro/customer.avsc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +42,8 @@
         <option value="package-info" />
         <option value="Kotlin Class" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -190,13 +194,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669059442848</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Messaging module: Adding Listener implementations">
-      <created>1669749737260</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1669749737260</updated>
     </task>
     <task id="LOCAL-00030" summary="Container module: Adding Spring Boot startes class and config">
       <created>1669772708779</created>
@@ -534,7 +531,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672960955294</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Creating Customer kafka topic &amp; Customer modules">
+      <created>1672972187151</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1672972187151</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -549,7 +553,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implementing Messaging module" />
     <MESSAGE value="Implementing Order Payment Saga" />
     <MESSAGE value="Using Order Payment Saga in Messaging &amp; Implementing Order Approval Saga" />
     <MESSAGE value="Fix some database script errors and modules in pom.xml" />
@@ -574,7 +577,8 @@
     <MESSAGE value="Testing Payment Request Message Listener for double payment" />
     <MESSAGE value="Refactoring Restaurant Service for Outbox pattern - part 1" />
     <MESSAGE value="fixing some errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing some errors" />
+    <MESSAGE value="Creating Customer kafka topic &amp; Customer modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating Customer kafka topic &amp; Customer modules" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
