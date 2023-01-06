@@ -4,15 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Refactoring Restaurant Service for Outbox pattern - part 2">
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="fixing some errors">
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-application/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-container/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-container/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-container/src/main/resources/init-data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-container/src/main/resources/init-schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-dataaccess/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-application-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/customer-domain-core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-messaging/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/resources/avro/customer.avsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/src/main/java/com/food/ordering/system/kafka/producer/KafkaMessageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/src/main/java/com/food/ordering/system/kafka/producer/KafkaMessageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/java/com/food/ordering/system/restaurant/service/domain/BeanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/java/com/food/ordering/system/restaurant/service/domain/BeanConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/RestaurantDomainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/RestaurantDomainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/event/OrderApprovalEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/event/OrderApprovalEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/event/OrderApprovedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/event/OrderApprovedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/event/OrderRejectedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/com/food/ordering/system/restaurant/service/domain/event/OrderRejectedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/food/ordering/system/customer/service/CustomerServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/customer-container/src/main/java/com/food/ordering/system/customer/service/CustomerServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/init-data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/init-schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +90,7 @@
       <recent name="C:\Users\joaop\OneDrive\Área de Trabalho\food-ordering-system\payment-service\payment-dataaccess\src\main\java\com\food\ordering\system\payment\service\dataaccess" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Development\food-ordering-system\customer-service\customer-container\src\main\resources" />
       <recent name="C:\Development\food-ordering-system" />
       <recent name="$PROJECT_DIR$/infrastructure/saga/src/main/java/com/food/ordering/system/saga" />
       <recent name="C:\Users\joaop\OneDrive\Área de Trabalho\food-ordering-system\infrastructure\docker-compose\volumes\zookeeper" />
@@ -92,7 +106,7 @@
   <component name="RunManager" selected="Application.RestaurantServiceApplication">
     <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.food.ordering.system.customer.service.CustomerServiceApplication" />
-      <module name="customer-service" />
+      <module name="customer-container" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.food.ordering.system.customer.service.*" />
@@ -176,13 +190,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669059442848</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Messaging module: Adding Publisher implementations">
-      <created>1669744961478</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1669744961478</updated>
     </task>
     <task id="LOCAL-00029" summary="Messaging module: Adding Listener implementations">
       <created>1669749737260</created>
@@ -520,7 +527,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672955719553</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="fixing some errors">
+      <created>1672960955294</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1672960955294</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -535,7 +549,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implementing Data access module" />
     <MESSAGE value="Implementing Messaging module" />
     <MESSAGE value="Implementing Order Payment Saga" />
     <MESSAGE value="Using Order Payment Saga in Messaging &amp; Implementing Order Approval Saga" />
@@ -560,7 +573,8 @@
     <MESSAGE value="Refactoring Payment Messaging module for Outbox Pattern" />
     <MESSAGE value="Testing Payment Request Message Listener for double payment" />
     <MESSAGE value="Refactoring Restaurant Service for Outbox pattern - part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Restaurant Service for Outbox pattern - part 1" />
+    <MESSAGE value="fixing some errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing some errors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
