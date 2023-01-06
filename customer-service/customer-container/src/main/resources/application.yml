@@ -21,7 +21,7 @@ spring:
   sql:
     init:
       mode: ALWAYS
-      schema-locations: classpath:init-schema.sql,classpath:init-data.sql
+      schema-locations: classpath:init-schema.sql
 
 kafka-config:
   bootstrap-servers: localhost:19092, localhost:29092, localhost:39092

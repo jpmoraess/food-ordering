@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/CustomerMessageListenerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/dto/message/CustomerModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/ports/input/message/listener/customer/CustomerMessageListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/listener/kafka/CustomerKafkaListener.java" afterDir="false" />
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Updating Order Service to use local database table with CQRS pattern">
+      <change afterPath="$PROJECT_DIR$/customer-service/customer-container/src/main/java/com/food/ordering/system/customer/service/BeanConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-container/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-container/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-container/src/main/resources/init-schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-container/src/main/resources/init-schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/customer/adapter/CustomerRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/customer/adapter/CustomerRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/customer/entity/CustomerEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/customer/entity/CustomerEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/customer/mapper/CustomerDataAccessMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/com/food/ordering/system/order/service/dataaccess/customer/mapper/CustomerDataAccessMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/mapper/OrderDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/mapper/OrderDataMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/ports/output/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/ports/output/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/mapper/OrderMessagingDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/com/food/ordering/system/order/service/messaging/mapper/OrderMessagingDataMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/customer-container/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/customer-container/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/customer-container/src/main/resources/init-data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/customer-messaging/src/main/java/com/food/ordering/system/customer/service/messaging/mapper/CustomerMessagingDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/customer-messaging/src/main/java/com/food/ordering/system/customer/service/messaging/mapper/CustomerMessagingDataMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669059442848</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Container module: Explaining kafka consumer properties">
-      <created>1669773396005</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1669773396005</updated>
     </task>
     <task id="LOCAL-00032" summary="Container module: Adding Order database schema file">
       <created>1669775450820</created>
@@ -527,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672976008613</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Updating Order Service to use local database table with CQRS pattern">
+      <created>1673011132974</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1673011132974</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -542,7 +533,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Using Order Payment Saga in Messaging &amp; Implementing Order Approval Saga" />
     <MESSAGE value="Fix some database script errors and modules in pom.xml" />
     <MESSAGE value="Updating Order Service database schema and config for Outbox Pattern" />
     <MESSAGE value="Refactoring Order domain layer: Adding Outbox models &amp; Updating ports" />
@@ -567,7 +557,8 @@
     <MESSAGE value="fixing some errors" />
     <MESSAGE value="Creating Customer kafka topic &amp; Customer modules" />
     <MESSAGE value="Implementing Customer Service modules using Clean and Hexagonal Architecture principles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing Customer Service modules using Clean and Hexagonal Architecture principles" />
+    <MESSAGE value="Updating Order Service to use local database table with CQRS pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating Order Service to use local database table with CQRS pattern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
