@@ -29,6 +29,7 @@
         <mockito.version>4.5.1</mockito.version>
         <spring-kafka.version>2.8.5</spring-kafka.version>
         <kafka-avro-serializer.version>7.0.1</kafka-avro-serializer.version>
+        <micrometer-registry-prometheus.version>1.10.3</micrometer-registry-prometheus.version>
         <avro.version>1.11.1</avro.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -170,6 +171,11 @@
                 <groupId>com.food.ordering.system</groupId>
                 <artifactId>kafka-config-data</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.micrometer</groupId>
+                <artifactId>micrometer-registry-prometheus</artifactId>
+                <version>${micrometer-registry-prometheus.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.mockito</groupId>
