@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Update to spring 3.0.5">
+    <list default="true" id="bfa667b4-c48e-46a2-bf40-147d64227d36" name="Changes" comment="Debezium Kafka Connector">
+      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/postgres-debezium.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/docker-compose/.env" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/docker-compose/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/docker-compose/kafka-cluster.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/docker-compose/kafka-cluster.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,13 +171,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669059442848</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Application Service domain module: Implementing inpurt ports - part 1">
-      <created>1670550331332</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1670550331332</updated>
     </task>
     <task id="LOCAL-00039" summary="Application Service domain module: Implementing input ports - part 2">
       <created>1670551101696</created>
@@ -516,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681786952378</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Debezium Kafka Connector">
+      <created>1688169888397</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1688169888398</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -534,7 +533,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactoring Order domain layer: Updating OrderCreate Command Handler" />
     <MESSAGE value="Refactoring Order domain layer: Updating Order Payment Saga pt 1" />
     <MESSAGE value="Refactoring Order domain layer: Updating Order Payment Saga pt 2" />
     <MESSAGE value="Fixing POMs" />
@@ -559,7 +557,8 @@
     <MESSAGE value="added monitoring config" />
     <MESSAGE value="adding monitoring and creating dashboards with Grafana" />
     <MESSAGE value="Update to spring 3.0.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update to spring 3.0.5" />
+    <MESSAGE value="Debezium Kafka Connector" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debezium Kafka Connector" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
