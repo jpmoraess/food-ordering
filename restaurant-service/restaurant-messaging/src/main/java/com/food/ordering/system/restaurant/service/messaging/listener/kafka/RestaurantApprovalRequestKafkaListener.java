@@ -46,13 +46,13 @@ public class RestaurantApprovalRequestKafkaListener implements KafkaConsumer<Env
 						@Header(KafkaHeaders.RECEIVED_PARTITION) List<Integer> partitions,
 						@Header(KafkaHeaders.OFFSET) List<Long> offsets) {
 		log.info("{} number of restaurant approval requests received!",
-				messages.stream().filter(message -> message.getBefore() == null && DebeziumOp.CREATE.name().equals(message.getOp())).toList().size());
+				messages.stream().filter(message -> message.getBefore() == null && DebeziumOp.CREATE.getValue().equals(message.getOp())).toList().size());
 
 		messages.forEach(avroModel -> {
 			Value restaurantApprovalRequestAvroModel = avroModel.getAfter();
 			OrderApprovalEventPayload orderApprovalEventPayload = kafkaMessageHelper
 					.getOrderEventPayload(restaurantApprovalRequestAvroModel.getPayload(), OrderApprovalEventPayload.class);
-			if (avroModel.getBefore() == null && DebeziumOp.CREATE.name().equals(avroModel.getOp())) {
+			if (avroModel.getBefore() == null && DebeziumOp.CREATE.getValue().equals(avroModel.getOp())) {
 				try {
 					log.info("Processing order approval for order id: {}", orderApprovalEventPayload.getOrderId());
 					restaurantApprovalRequestMessageListener.approveOrder(restaurantMessagingDataMapper.
