@@ -5,7 +5,7 @@ import com.food.ordering.system.kafka.order.avro.model.PaymentStatus;
 import com.food.ordering.system.kafka.producer.KafkaMessageHelper;
 import com.food.ordering.system.messaging.DebeziumOp;
 import com.food.ordering.system.order.service.domain.exception.OrderNotFoundException;
-import com.food.ordering.system.order.service.domain.outbox.model.payment.PaymentOrderEventPayload;
+import com.food.ordering.system.domain.event.payload.PaymentOrderEventPayload;
 import com.food.ordering.system.order.service.domain.ports.input.message.listener.payment.PaymentResponseMessageListener;
 import com.food.ordering.system.order.service.messaging.mapper.OrderMessagingDataMapper;
 import debezium.payment.order_outbox.Envelope;
